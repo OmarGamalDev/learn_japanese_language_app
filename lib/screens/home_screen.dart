@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_japanese_language_app/widgets/custom_container_home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,8 +8,29 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Container(),
+      backgroundColor: Color(0xfffdf0d5),
+      appBar: AppBar(
+        backgroundColor: Color(0xff483226),
+        title: Text(
+          "Toku",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25.sp,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      body: Column(
+        children: [
+          CustomContainerHomeScreen(color: Color(0xfff38f29), text: "Numbers"),
+          CustomContainerHomeScreen(
+            color: Color(0xff4c7b2a),
+            text: "Family Members",
+          ),
+          CustomContainerHomeScreen(color: Color(0xff7a3c9f), text: "Colors"),
+          CustomContainerHomeScreen(color: Color(0xff419ec2), text: "Phrases"),
+        ],
+      ),
     );
   }
 }
