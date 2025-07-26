@@ -1,11 +1,11 @@
-class Numbers {
-  final String imagePath;
+class PhrasesModel {
   final String japaneseText;
   final String englishText;
+  final String audioPath;
 
-  Numbers({
-    required this.imagePath,
+  PhrasesModel({
     required this.japaneseText,
     required this.englishText,
+    required this.audioPath,
   });
 }

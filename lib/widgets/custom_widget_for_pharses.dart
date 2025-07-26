@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_japanese_language_app/constants/app_styles.dart';
-import 'package:learn_japanese_language_app/models/app_model.dart';
+import 'package:learn_japanese_language_app/models/phrases_model.dart';
 
-class CustomCatgoryWidgetForAllScreen extends StatelessWidget {
-  const CustomCatgoryWidgetForAllScreen({
+class CustomWidgetForPharses extends StatelessWidget {
+  const CustomWidgetForPharses({
     super.key,
-    required this.languageObject,
+    required this.phrasesObject,
     this.onPressed,
   });
-  final AppModel languageObject;
+  final PhrasesModel phrasesObject;
   final VoidCallback? onPressed;
 
   @override
@@ -19,18 +19,14 @@ class CustomCatgoryWidgetForAllScreen extends StatelessWidget {
       height: 120.h,
       child: Row(
         children: [
-          Container(
-            color: Color(0xfffdf0d7),
-            child: Image.asset(languageObject.imagePath),
-          ),
           Padding(
             padding: const EdgeInsets.only(left: 13.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(languageObject.japaneseText, style: AppStyles.title),
-                Text(languageObject.englishText, style: AppStyles.title),
+                Text(phrasesObject.japaneseText, style: AppStyles.title),
+                Text(phrasesObject.englishText, style: AppStyles.title),
               ],
             ),
           ),

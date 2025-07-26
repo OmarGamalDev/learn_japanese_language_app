@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_japanese_language_app/screens/colors_screen.dart';
+import 'package:learn_japanese_language_app/screens/family_members_screen.dart';
 import 'package:learn_japanese_language_app/screens/numbers_screen.dart';
+import 'package:learn_japanese_language_app/screens/pharses_screen.dart';
 import 'package:learn_japanese_language_app/widgets/custom_container_home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -40,17 +43,40 @@ class HomeScreen extends StatelessWidget {
           CustomContainerHomeScreen(
             color: Color(0xff4c7b2a),
             text: "Family Members",
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return FamilyMembersScreen();
+                  },
+                ),
+              );
+            },
           ),
           CustomContainerHomeScreen(
             color: Color(0xff7a3c9f),
             text: "Colors",
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ColorsScreen();
+                  },
+                ),
+              );
+            },
           ),
           CustomContainerHomeScreen(
             color: Color(0xff419ec2),
             text: "Phrases",
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PharsesScreen()),
+              );
+            },
           ),
         ],
       ),
