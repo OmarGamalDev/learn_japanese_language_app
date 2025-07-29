@@ -5,11 +5,13 @@
 
 ## Screenshots
 
-<img src="assets/screenshots/home_screen.png" width="250"/>
-<img src="assets/screenshots/numbers_screen.png" width="250"/>
-<img src="assets/screenshots/colors_screen.png" width="250"/>
-<img src="assets/screenshots/family_members_screen.png" width="250"/>
-<img src="assets/screenshots/phrases_screen.png" width="250"/>
+<p align="center">
+  <img src="assets/screenshots/home_screen.png" width="180"/>
+  <img src="assets/screenshots/numbers_screen.png" width="180"/>
+  <img src="assets/screenshots/colors_screen.png" width="180"/>
+  <img src="assets/screenshots/family_members_screen.png" width="180"/>
+  <img src="assets/screenshots/phrases_screen.png" width="180"/>
+</p>
 
 ## Features
 - Categorized Japanese words with images and sounds
